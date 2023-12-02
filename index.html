@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="icon" href="https://ik.imagekit.io/abduledits5/myavi.jpeg?updatedAt=1700881114795" type="image/favicon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-2.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
+
 <body>
     <div class="menu-icon">
         <span class="menu-icon__line menu-icon__line-up"></span>
         <span class="menu-icon__line menu-icon__line-down"></span>
     </div>
     <div class="nav-wrapper">
-        <div class="theme-cta"></div>
         <span>Hope you're having a great day.</span>
         <div class="nav-content">
             <ul class="nav__list">
-                <li class="nav__list-item"><a style="transition-delay: 0.5s;" href="index.html">Home</a></li>
-                <li class="nav__list-item"><a style="transition-delay: 0.6s;" href="https://abdulraufedits.github.io/my-projects">My Work</a></li>
-                <li class="nav__list-item"><a style="transition-delay: 0.7s;" href="#skill--sec">My Skills</a></li>
+                <li class="nav__list-item"><a style="transition-delay: 0.5s;" href="/">Home</a></li>
+                <li class="nav__list-item"><a style="transition-delay: 0.6s;" href="/my-projects">My Work</a></li>
+                <li class="nav__list-item"><a style="transition-delay: 0.7s;" href="/">About</a></li>
                 <li class="nav__list-item"><a style="transition-delay: 0.8s;" href="#contact--sec">Contact Me</a></li>
-                <li class="nav__list-item"><a href="https://drive.google.com/file/d/14rS2xfC8g0YmlMekIK10SwwjzneulGtH/view?usp=sharing" class="resume-cta" style="transition-delay: 0.9s;" target="_blank">Resume<svg
-                             class="menu-resume-svg" viewBox="0 0 12 11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                <li class="nav__list-item"><a
+                        href="https://drive.google.com/file/d/14rS2xfC8g0YmlMekIK10SwwjzneulGtH/view?usp=sharing"
+                        class="resume-cta" style="transition-delay: 0.9s;" target="_blank">Resume<svg
+                            class="menu-resume-svg" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M9.60854 8.18416L10.1176 3.6023L1.43727 10.5466L0.562693 9.45338L9.24306 2.50909L4.66121 1.99999L4.81581 0.608555L11.0773 1.28L11.77 1.36719L11.6957 2.07729L11 8.33876L9.60854 8.18416Z"
                                 fill="currentColor" />
@@ -38,34 +42,239 @@
             </div>
         </div>
     </div>
+    <header class="title-bar">
+        <strong>Abdul Rauf</strong>
+        <span style="display: flex; gap: 2rem;"><a href="/about" style="color: var(--blue)">About</a>
+            <a href="/my-projects">My Work</a>
+            <div class="theme-cta"></div>
+        </span>
+        <div></div>
+    </header>
     <!-- abt sec -->
     <main class="section abt-wrapper" id="abt--sec">
-        <div class="abt-head">
-            <h1 class="abt-h1">About Me</h1><img id="abt--img" alt="my about image" class="abt-img">
-        </div>
-        <div class="abtcontainer">
-            <h4><span style="color: var(--blue);">UI/UX DESIGNER</span>&nbsp;<span
-                    style="color: var(--yellow);">FRONTEND DEVELOPER</span></h4>
-            <strong class="abt-strong"><span>Transforming ideas into reality.</span>
-                <b>Connecting to users and
-                    crafting experiences based on
-                    their needs and desires.</b></strong>
-            <div class="abt-p-container">
-                <p class="faded-p" style="grid-area: top-area;">I am a UI/UX designer and frontend web developer with a
-                    passion for creating intuitive
-                    and visually appealing digital experiences.</p>
-                <p class="faded-p" style="grid-area: mid-area;">I have a strong understanding of user-centered design
-                    principles and am skilled in using design tools such as Adobe XD, Figma and Webflow.</p>
-                <p class="faded-p" style="grid-area: mid-area2;"> I also have
-                    expertise in frontend web development using technologies such as HTML, CSS, and JavaScript. I am
-                    dedicated to creating responsive and accessible websites that provide a seamless user experience
-                    across all devices.</p>
-                <p class="faded-p" style="grid-area: btm-area;"> I help businesses to reach their goals by creating
-                    clean
-                    but catchy digital
-                    solutions that have a personality.</p>
+        <h1 class="abt-h1">About Me</h1>
+        <div class="container">
+            <p class="abt-p">I'm a UI/UX Designer and frontend web developer with a
+                passion for creating intuitive
+                and visually appealing digital experiences.</p>
+            <img src="https://ik.imagekit.io/abduledits5/pic2.jpeg" alt="my picture" class="feature-img">
+            <p class="abt-p"> I am
+                dedicated to creating responsive and accessible websites that provide a seamless user experience
+                across all devices.</p>
+            <main class="skills-sec">
+                <div class="skills-head" id="skill--sec">
+                    <h1 class="abt-h1">I can help you with</h1>
+                </div>
+                <div class="skill-wrapper">
+                    <section class="skill-sec-1">
+                        <div class="skillcontainer">
+                            <h2 class="skill-name">UI/UX</h2>
+                            <ul>
+                                <li>Web Design</li>
+                                <li>App Design</li>
+                                <li>Saas Landing page Design</li>
+                                <li>UX Prototyping</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="skill-sec-2">
+                        <div class="skillcontainer">
+                            <h2 class="skill-name">Frontend Development</h2>
+                            <ul>
+                                <li>Web Development</li>
+                                <li>Static HTML pages</li>
+                                <li>Ecommerce website</li>
+                                <li>Wordpress website</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="skill-sec-3">
+                        <div class="skillcontainer">
+                            <h2 class="skill-name">Video Editing</h2>
+                            <ul>
+                                <li>2D Animation</li>
+                                <li>Vlogs</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="skill-sec-4">
+                        <div class="skillcontainer">
+                            <h2 class="skill-name">Brochure Design</h2>
+                            <ul>
+                                <li>Magazine Design</li>
+                                <li>Flyer Design</li>
+                                <li>Resume Design</li>
+                                <li>Book Design</li>
+                                <li>Card Design (Business cards, invitation cards, etc)</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <h1 class="abt-h1">Based in Karachi, Pakistan</h1>
+            <div class="imgcontainer">
+                <img src="https://ik.imagekit.io/abduledits5/my_new_avi.png" />
+                <img src="https://ik.imagekit.io/abduledits5/khistreets.jpg" alt="karachi picture">
+                <img src="https://images.pexels.com/photos/16366488/pexels-photo-16366488/free-photo-of-frere-hall-in-karachi.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img src="https://ik.imagekit.io/abduledits5/mazareQuaid.jpg" alt="Quaid tomb">
             </div>
+            <main class="exp-sec">
+                <div class="exp-head" id="exp--sec">
+                    <h1 class="abt-h1">My Work Experience</h1>
+                </div>
+                <div class="exp-wrapper">
+                    <section class="exp-sec-1">
+                        <a href="https://www.fiverr.com/abduledits5" target="_blank">
+                            <div class="expcontainer">
+                                <div class="exp-tag">
+                                    <h2 class="exp-name">Fiverr</h2>Sep 2022 — Present&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Web /
+                                    Mobile / App Designer (Freelance)
+                                </div>
+                                <a href="https://www.fiverr.com/abduledits5" target="_blank"><button class="exp-info"><svg
+                                            width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.085 15.085V17.7437L25.6161 17.7531L14.1421 29.2271L16.0278 31.1127L27.5017 19.6387L27.5112 30.1699H30.1699V15.085H15.085Z"
+                                                fill="currentColor"></path>
+                                        </svg></button>
+                                </a>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+            </main>
+            <p class="abt-p">I have a strong understanding of user-centered design
+                principles and am skilled in using design tools such as Adobe XD, Figma and Webflow.</p>
+            <p class="abt-p"> I also have expertise in frontend web development using technologies such as HTML, CSS,
+                and JavaScript.</p>
+            <main class="skills-sec">
+                <h1 class="abt-h1">I use these tools to work</h1>
+                <div class="apps-wrapper">
+                    <div class="key-box">
+                        <div class="key-1"><span class="expert"></span>Expert</div>
+                        <div class="key-2"><span class="inter"></span>Intermediate</div>
+                    </div>
+                    <section class="apps-sec-1">
+                        <div class="appcontainer">
+                            <h2 class="app-name">Figma</h2><span class="expert"></span>
+                        </div>
+                    </section>
+                    <section class="apps-sec-2">
+                        <div class="appcontainer">
+                            <h2 class="app-name">Webflow</h2><span class="expert"></span>
+                        </div>
+                    </section>
+                    <section class="apps-sec-3">
+                        <div class="appcontainer">
+                            <h2 class="app-name">Framer</h2><span class="expert"></span>
+                        </div>
+                    </section>
+                    <section class="apps-sec-3_1">
+                        <div class="appcontainer">
+                            <h2 class="app-name">Penpot</h2><span class="expert"></span>
+                        </div>
+                    </section>
+                    <section class="apps-sec-4">
+                        <div class="appcontainer">
+                            <h2 class="app-name">Adobe XD</h2><span class="expert"></span>
+                        </div>
+                    </section>
+                    <!-- <section class="apps-sec-5">
+                <div class="appcontainer">
+                    <h2 class="app-name">Adobe Illustrator</h2><span class="inter"></span>
+                </div>
+            </section>-->
+            <section class="apps-sec-6">
+                <div class="appcontainer">
+                    <h2 class="app-name">Adobe Photoshop</h2><span class="inter"></span>
+                </div>
+            </section>
+            <!--<section class="apps-sec-7">
+                <div class="appcontainer">
+                    <h2 class="app-name">Adobe Lightroom</h2><span class="inter"></span>
+                </div>
+            </section>
+            <section class="apps-sec-8">
+                <div class="appcontainer">
+                    <h2 class="app-name">After Effects</h2><span class="inter"></span>
+                </div>
+            </section> -->
+                    <section class="apps-sec-9">
+                        <div class="appcontainer">
+                            <h2 class="app-name">Invision Studio</h2><span class="inter"></span>
+                        </div>
+                    </section>
+                    <section class="apps-sec-10">
+                        <div class="appcontainer">
+                            <h2 class="app-name">HTML</h2><span class="expert"></span>
+                        </div>
+                    </section>
+                    <section class="apps-sec-11">
+                        <div class="appcontainer">
+                            <h2 class="app-name">CSS</h2><span class="expert"></span>
+                        </div>
+                    </section>
+                    <section class="apps-sec-12">
+                        <div class="appcontainer">
+                            <h2 class="app-name">JavaScript</h2><span class="inter"></span>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <p class="abt-p"> I help businesses to reach their goals by creating
+                clean
+                but catchy digital
+                solutions that have a personality.</p>
         </div>
     </main>
+    <div class="contact-sec" id="contact--sec">
+        <div class="contact-head">
+            <strong>Need a designer for your project?</strong>
+            <p>I'm always happy to hear about the exciting opportunities. Let's get in touch.</p>
+        </div>
+        <a href="/contact.html"><button class="cta contact-cta"><svg width="22" height="22" viewBox="0 0 32 32"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M31.7071 0.292891C31.9788 0.564529 32.0708 0.967761 31.9439 1.33035L21.4439 31.3303C21.3084 31.7173 20.9504 31.9825 20.5408 31.9992C20.1311 32.0159 19.7527 31.7808 19.5862 31.4061L13.7424 18.2576L0.593867 12.4138C0.219186 12.2473 -0.0158775 11.8689 0.000836285 11.4592C0.0175501 11.0496 0.282654 10.6916 0.669655 10.5561L30.6697 0.056139C31.0322 -0.0707664 31.4355 0.0212527 31.7071 0.292891ZM15.6928 17.7215L20.3894 28.2889L28.6085 4.80568L15.6928 17.7215ZM27.1943 3.39147L3.71108 11.6106L14.2785 16.3073L27.1943 3.39147Z"
+                        fill="currentColor" />
+                </svg>Contact Me</button></a>
+    </div>
+    <!-- connect sec -->
+    <footer class="connect-container">
+        <div class="connect-wrapper" id="connect--sec">
+            <div class="txt-blck">© Abdul Rauf. All Rights Reserved.</div>
+            <button class="connect-cta">
+                <strong class="connect-txt">Lorem ipsum dolor</strong>
+                <div class="connect-icons">
+                    <a id="twitter" class="connect-icon" href="https://www.twitter.com/abdulraufedits"
+                        target="_blank"><svg width="34" height="30" viewBox="0 0 19 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.35348 14.5962C4.32049 14.5962 2.4254 14.0049 0.830322 12.9847C2.1846 13.0723 4.57459 12.8624 6.06116 11.4445C3.82487 11.3419 2.81635 9.62672 2.6848 8.89376C2.87481 8.96706 3.78102 9.05501 4.29259 8.84978C1.72012 8.20477 1.32548 5.94725 1.41318 5.25826C1.89552 5.59543 2.71403 5.7127 3.03559 5.68338C0.638519 3.96825 1.50088 1.38822 1.92475 0.831167C3.64498 3.21439 6.22306 4.5529 9.41248 4.62736C9.35235 4.36361 9.32059 4.08902 9.32059 3.807C9.32059 1.78298 10.9566 0.142181 12.9747 0.142181C14.0291 0.142181 14.9792 0.590102 15.6461 1.30657C16.3507 1.14146 17.4112 0.754949 17.9296 0.420707C17.6683 1.3589 16.8548 2.14154 16.3627 2.43162C16.3668 2.44149 16.3587 2.42171 16.3627 2.43162C16.7949 2.36624 17.9645 2.14147 18.4265 1.828C18.198 2.35506 17.3356 3.2314 16.6278 3.72202C16.7595 9.5298 12.3159 14.5962 6.35348 14.5962Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a id="linkin" class="connect-icon" href="https://www.linkedin.com/in/abdulraufedits"
+                        target="_blank"><svg width="30" height="30" viewBox="0 0 28 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0ZM10.6186 7.69215C10.6186 8.6267 9.80852 9.3843 8.80928 9.3843C7.81004 9.3843 7 8.6267 7 7.69215C7 6.7576 7.81004 6 8.80928 6C9.80852 6 10.6186 6.7576 10.6186 7.69215ZM7.24742 10.6281H10.3402V20H7.24742V10.6281ZM12.2268 10.6281H15.3196V11.8305C15.8387 11.1701 16.8354 10.4401 18.4433 10.4401C21.1508 10.4401 21.9738 11.8954 22 15.0537V20H18.9072C18.9072 19.3889 18.903 18.7745 18.8987 18.1604V18.1601V18.1598V18.1597V18.1595C18.8927 17.2883 18.8867 16.4175 18.8928 15.5571C18.9008 14.4345 18.911 12.9855 17.2062 12.9855C15.6977 12.9855 15.3196 14.0976 15.3196 15.2049V20H12.2268V10.6281Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a id="linktree" class="connect-icon" href="https://linktr.ee/abduledits5" target="_blank"><svg
+                            width="25" height="30" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.04049 6.63293V0.219971H13.004V6.63293L17.4575 2.04588L20.0405 4.76248L15.4534 9.17139H22V12.9123H15.3644L20.085 17.4548L17.4575 20.0823L11 13.6248L4.54251 20.0823L1.91498 17.4548L6.63563 12.9123H0V9.17139H6.63563L1.91498 4.76248L4.54251 2.13495L9.04049 6.63293Z"
+                                fill="currentColor" />
+                            <path d="M13.004 18.0783H9.04049V26.8961H13.004V18.0783Z" fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+            </button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

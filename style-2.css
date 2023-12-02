@@ -1,0 +1,112 @@
+.contact-sec {
+  background-color: #050505;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-head {
+  width: 50%;
+}
+.contact-head strong {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.contact-head p {
+  color: #ffffff;
+  margin-top: 1rem;
+  opacity: 0.4;
+}
+
+.contact-cta {
+  padding: 24px 32px;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  color: #050505;
+}
+.contact-cta:hover,
+.contact-cta:active {
+  background-color: #050505;
+  color: #ffffff;
+}
+h1.contact {
+  color: var(--black);
+  width: 100%;
+  font-size: 3.5rem;
+  line-height: 100%;
+  font-family: var(--primary-font);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+p.contact-p {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 160%;
+}
+.connect-container {
+  background-color: #050505;
+  padding: 0rem 6rem;
+}
+.connect-container .connect-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+button.connect-cta {
+  font-family: var(--primary-font);
+  background-color: #050505;
+  color: #fff;
+  border: 0;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.connect-wrapper .txt-blck {
+  color: #858585;
+}
+strong {
+  font-weight: inherit;
+}
+.connect-icons {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4%;
+}
+.connect-icons a {
+  color: #ffffff;
+  transform: translateY(100%);
+  transition: 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.connect-txt {
+  color: #050505;
+  display: inline-block;
+  transition: 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 1.5s;
+}
+.connect-icons a:nth-child(1) {
+  transition-delay: 0.5s;
+}
+.connect-icons a:nth-child(2) {
+  transition-delay: calc(60ms + 0.5s);
+}
+.connect-icons a:nth-child(3) {
+  transition-delay: calc(120ms + 0.5s);
+}
+
+.connect-txt.show,
+.connect-icon.show {
+  transform: translateY(-100%);
+}

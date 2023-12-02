@@ -43,9 +43,11 @@
   justify-content: space-between;
   padding: 0px 3rem;
   letter-spacing: -0.02rem;
+  pointer-events: none;
 }
 .nav-wrapper.menu_active {
   transform: translateY(0px);
+  pointer-events: all;
 }
 .nav-wrapper > span {
   color: var(--black);
@@ -91,26 +93,29 @@
   opacity: 0.7;
 }
 .theme-cta {
-  position: fixed;
-  left: 50px;
-  top: 30px;
-  height: 66px;
-  width: 66px;
-  border-radius: 100%;
-  z-index: 999;
-  border: 2px solid var(--black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 42px;
+  height: 16px;
+  border-radius: 100px;
+  background-color: var(--black);
+  padding: 6px;
   cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
 }
 .theme-cta::before {
   content: "";
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  box-shadow: 12px 0px 0 0 var(--black);
-  transform: translateX(-12px);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  background-color: #fafafa;
+  transition: all 0.3s;
+}
+.theme-cta.dark{
+  background-color: var(--blue);
+}
+.theme-cta.dark::before{
+  transform: translateX(26px);
 }
 .smlinks {
   display: flex;
