@@ -193,7 +193,7 @@ h2.skill-name{
   margin-bottom: 3rem;
 }
 .exp-tag{
-  color: var(--black-06);
+  color: var(--white-06);
   font-weight: 500;
 }
 button.exp-info{
@@ -202,7 +202,7 @@ button.exp-info{
   background-color: var(--white);
   padding: 32px;
   border-radius: 60px;
-  border:2px solid  var(--black-03);
+  border:2px solid  var(--white-03);
   transition: all 0.4s ease-out;
   cursor: pointer;
 }
@@ -213,7 +213,7 @@ button.exp-info::before{
   width: 16ch;
   text-align: center;
   font-weight: 500;
-  color: var(--black-04);
+  color: var(--white-04);
 }
 h2.exp-name{
   color: var(--black);
