@@ -193,7 +193,8 @@ h2.skill-name{
   margin-bottom: 3rem;
 }
 .exp-tag{
-  color: var(--white-06);
+  font-size: 14px;
+  color: var(--white-04);
   font-weight: 500;
 }
 button.exp-info{
