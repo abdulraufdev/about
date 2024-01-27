@@ -73,7 +73,7 @@ strong {
 .connect-icons a {
   color: #ffffff;
   transform: translateY(100%);
-  transition: 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 }
 .connect-txt {
   color: #050505;
