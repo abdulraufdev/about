@@ -85,6 +85,10 @@ img{
 .title-bar span a:hover{
   color: var(--blue);
 }
+
+.title-bar strong{
+  width: 20ch;
+}
 .section {
     padding: 0 6rem;
     display: flex;
