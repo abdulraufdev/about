@@ -103,7 +103,7 @@ img{
 .abt-h1{
   color: var(--black);
   font-size: calc(84px + 2vw);
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 1rem;
   letter-spacing: var(--letter-spacing);
   user-select: none;
