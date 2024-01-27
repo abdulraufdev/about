@@ -8,7 +8,7 @@ html {
   --white-03: #181818;
   --white-04: #383838;
   --white-05: #585858;
-  --white-06: #a5a5a5;
+  --white-06: #aeaeae;
   --white-07: #efefef;
   --white-08: #f6f6f6;
   --blue: #3180e7;
@@ -31,7 +31,7 @@ html.second{
   --white-06: #585858;
   --white-07: #383838;
   --white-08: #181818;
-  --black-08: rgba(0, 0 , 0 , 0.2);
+  --white-08: rgba(0, 0 , 0 , 0.2);
 }
 ::selection{
   color: #000;
@@ -104,11 +104,12 @@ img{
   color: var(--black);
   font-size: calc(84px + 2vw);
   font-weight: 700;
+  margin-bottom: 1rem;
   letter-spacing: var(--letter-spacing);
   user-select: none;
   text-transform: uppercase;
 }
-.skill-h1, .exp-h1{
+.skill-h1{
   color: var(--black);
   font-size: 32px;
   line-height: 1.2;
@@ -119,10 +120,11 @@ img{
 }
 .abt-p{
   color: var(--black);
-  font-size: 2rem;
-  font-weight: 600;
-  width: 30ch;
-  padding-bottom: 4rem;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 32ch;
+  padding-bottom: 5rem;
 }
 
 .feature-img{
@@ -130,7 +132,7 @@ img{
   object-fit: cover;
   border-radius: 24px;
   aspect-ratio: 19/10;
-  margin: 10rem 0;
+  margin: 5rem 0;
 }
 .imgcontainer{
   display: grid;
@@ -180,76 +182,10 @@ h2.skill-name{
 .skillcontainer ul{
   list-style-type: none;
   margin: 1rem 0px;
-  color: var(--black);
+  color: var(--white-05);
 }
 .skillcontainer ul li{
-  opacity: 0.7;
   margin-bottom: 8px;
-}
-.exp-sec{
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  margin-bottom: 3rem;
-}
-.exp-tag{
-  color: var(--black-06);
-  font-weight: 500;
-}
-button.exp-info{
-  color: var(--black);
-  position: relative;
-  background-color: var(--white);
-  padding: 32px;
-  border-radius: 60px;
-  border:2px solid  var(--black-03);
-  transition: all 0.4s ease-out;
-  cursor: pointer;
-}
-button.exp-info::before{
-  content: "View profile";
-  position: absolute;
-  top: 120%; left: -20px;
-  width: 16ch;
-  text-align: center;
-  font-weight: 500;
-  color: var(--black-04);
-}
-h2.exp-name{
-  color: var(--black);
-  font-size: 5vw;
-  letter-spacing: var(--letter-spacing);
-  font-weight: 400;
-  margin-bottom: 1.3rem;
-}
-.expcontainer{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-top: 2px solid #aaa;
-  border-bottom: 2px solid #aaa;
-  padding: 1rem 0 3rem 0;
-  gap: 2rem;
-  cursor: pointer;
-}
-.exp-info svg{
-  transform: rotateZ(45deg);
-  transition: all 0.4s cubic-bezier(0.37, 1, 0.43, 1);
-}
-.expcontainer:hover .exp-info svg, .expcontainer:active .exp-info svg{
-  transform: rotateZ(0deg);
-}
-.expcontainer:hover button.exp-info, .expcontainer:active button.exp-info{
-  background-color: var(--black);
-}
-.expcontainer:hover .exp-info svg path, .expcontainer:active .exp-info svg path{
-  fill: var(--white);
-}
-.exp-wrapper{
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
 }
 
 .apps-wrapper{

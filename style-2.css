@@ -30,22 +30,7 @@
   background-color: #050505;
   color: #ffffff;
 }
-h1.contact {
-  color: var(--black);
-  width: 100%;
-  font-size: 3.5rem;
-  line-height: 100%;
-  font-family: var(--primary-font);
-  -webkit-user-select: none;
-  user-select: none;
-}
 
-p.contact-p {
-  color: var(--black);
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 160%;
-}
 .connect-container {
   background-color: #050505;
   padding: 0rem 6rem;

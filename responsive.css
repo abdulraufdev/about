@@ -34,18 +34,6 @@
     }
 }
 @media screen and (max-width: 720px) {
-    h2.exp-name{
-        font-size: calc(3vw + 16px);
-    }
-    .exp-tag{
-        font-size: 2vw;
-    }
-    .expcontainer{
-        padding: 2rem 0px;
-    }
-    button.exp-info::before{
-        top: 110%;
-    }
     h2.app-name{
         font-size: 16px;
     }
@@ -64,36 +52,18 @@
     }
 }
 @media screen and (max-width: 530px) {
-    button.exp-info{
-        padding: 12px;
-        border-radius: 100%;
-    }
-    .exp-info svg{
-        transform:scale(70%)
-    }
-    button.exp-info::before{
-        left: -60%;
-    }
-    .exp-tag{
-        font-size: calc(2vw + 3px);
-    }
-    .exp-tag .exp-name{
-        font-size: calc(5vw + 16px);
-    }
-    button.exp-info{
-        display: none;
-    }
     .abt-h1{
-        font-size: 28px;
-        margin-bottom: 1rem;
+        font-size: 36px;
+        font-weight: 800;
     }
     .abt-p{
         font-size: 20px;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
         width: auto;
     }
     .feature-img{
-        margin: 5rem 0;
+        margin: 3rem 0;
+        aspect-ratio: 16/12;
     }
     .container{
         gap: 1.2rem;
@@ -105,8 +75,12 @@
     }
 }
 @media screen and (max-width: 430px) {
+    .abt-p{
+        font-size: 18px;
+    }
     .section,.contact-sec{
         padding:  1.2rem;
+        gap: 2rem;
     }
     .title-bar {
         padding: 2rem 1.2rem;
