@@ -95,3 +95,21 @@ strong {
 .connect-icon.show {
   transform: translateY(-100%);
 }
+
+/*text animations*/
+
+.p-text-anim {
+  padding-bottom: 1rem;
+}
+
+.word {
+  clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
+  transform: translateY(120%);
+}
+
+.line {
+  clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
+}
+.p-text-anim a > .word{
+  text-decoration: underline;
+}
