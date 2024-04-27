@@ -1,6 +1,6 @@
 .contact-sec {
   background-color: #050505;
-  padding: 2rem 6rem;
+  padding: 2rem 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,20 +9,18 @@
   width: 50%;
 }
 .contact-head strong {
-  color: #ffffff;
+  color: #fafafa;
   font-size: 3rem;
   font-weight: 600;
 }
 .contact-head p {
-  color: #ffffff;
+  color: #858585;
   margin-top: 1rem;
-  opacity: 0.4;
 }
-
 .contact-cta {
   padding: 24px 32px;
   font-size: 1.1rem;
-  background-color: #ffffff;
+  background-color: #fafafa;
   color: #050505;
 }
 .contact-cta:hover,
@@ -33,7 +31,7 @@
 
 .connect-container {
   background-color: #050505;
-  padding: 0rem 6rem;
+  padding: 0rem 10rem;
 }
 .connect-container .connect-wrapper {
   display: flex;
@@ -73,7 +71,7 @@ strong {
 .connect-icons a {
   color: #ffffff;
   transform: translateY(100%);
-  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  transition: .3s cubic-bezier(0.33, 1, 0.68, 1); 
 }
 .connect-txt {
   color: #050505;
@@ -96,18 +94,19 @@ strong {
   transform: translateY(-100%);
 }
 
+.connect-icons i{
+  font-size: 32px;
+}
+
 /*text animations*/
 
 .p-text-anim {
   padding-bottom: 1rem;
 }
 
-.word {
-  clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
-  transform: translateY(120%);
-}
 
 .line {
+  position: relative;
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
 }
 .p-text-anim a > .word{

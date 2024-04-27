@@ -1,10 +1,24 @@
-@media screen and (max-width: 1024px) {
-    .abt-h1{
-        font-size: calc(42px + 2vw);
+@media screen and (width <= 1260px) {
+    .section, .contact-sec,.title-bar{
+        padding: 2rem 4rem;
     }
-    .imgcontainer{
-        display: flex;
-        flex-direction: column;
+    .connect-container{
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title-bar > span{
+        display: none !important;
+    }
+    .title-bar{
+        justify-content: stretch;
+    }
+    .title-bar > a > strong{
+        width: auto;
+    }
+    .name{
+        font-size: calc(42px + 2vw);
     }
 }
 @media screen and (max-width: 900px) {
@@ -32,6 +46,15 @@
     .abt-p {
         width: auto;
     }
+    .app-name{
+        font-size: 18px;
+    }
+    .app-name img{
+        height: 24px;
+    }
+    .stack-name{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 720px) {
     h2.app-name{
@@ -41,24 +64,20 @@
         display: flex;
         flex-direction: column;
     }
-    .title-bar span a, .title-bar > div{
-        display: none;
-    }
-    .title-bar {
-        justify-content: stretch;
-    }
     .contact-head p{
         margin-top: 1.5rem;
     }
+    .appcontainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 @media screen and (max-width: 530px) {
-    .abt-h1{
+    .abt-h1, .name{
         font-size: 28px;
     }
     .abt-p{
-        font-size: 20px;
+        font-size: 16px;
         padding-bottom: 2rem;
-        width: auto;
     }
     .feature-img{
         margin: 3rem 0;
@@ -67,26 +86,18 @@
     .container{
         gap: 1.2rem;
     }
-}
-@media screen and (width < 610px) {
     .contact-head strong{
         font-size: 2rem;
     }
+    .appcontainer{
+        grid-template-columns: 1fr;
+    }
+    .stack-name{
+        font-size: 16px;
+    }
 }
+
 @media screen and (max-width: 430px) {
-    .abt-p{
-        font-size: 18px;
-    }
-    .section,.contact-sec{
-        padding:  1.2rem;
-        gap: 2rem;
-    }
-    .title-bar {
-        padding: 2rem 1.2rem;
-    }
-    .connect-container{
-        padding: 0rem 1.2rem;
-    }
     .connect-wrapper{
         flex-direction: column-reverse;
         padding: 1rem 0;
@@ -94,24 +105,5 @@
     .connect-icons{
         justify-content: center;
     }
-    .key-box span{
-        width: 20px;
-        height: 20px;
-    }
-    .key-box{
-        flex-direction: column;
-        gap: 8px;
-    }
-    .imgcontainer img, .imgcontainer video {
-        height: 500px;
-    }
 }
 
-@media screen and (max-width: 340px) {
-    .cta{
-        width: 100%;
-    }
-    .appcontainer{
-        gap: 0.8rem;
-    }
-}
