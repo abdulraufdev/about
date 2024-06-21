@@ -1,126 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-html {
-  --primary-font: "Inter","Inter", sans serif;
-  --handwriting-font: "Caveat";
-  --white: #fdfdfd;
-  --black: #050505;
-  --white-03: #181818;
-  --white-04: #383838;
-  --white-05: #585858;
-  --white-06: #aeaeae;
-  --white-07: #efefef;
-  --white-08: #f6f6f6;
-  --blue: #3180e7;
-  --blue-hover: #1357af;
-  --blue-second: #d7e1f0;
-  --yellow: #ebab23;
-  --green: #52df11;
-  --primary-gradient: linear-gradient(60deg, #ff0000, #3734d3 );
-  scroll-behavior: smooth;
-  --letter-spacing: -0.020em;
-  letter-spacing: -0.020em;
-}
-html.second{
-  --white: #050505;
-  --black: #fafafa;
-  --white-03: #f6f6f6;
-  --white-04: #efefef;
-  --white-05: #a5a5a5;
-  --white-06: #585858;
-  --white-07: #383838;
-  --white-08: #181818;
-  --black-08: rgba(0, 0 , 0 , 0.2);
-}
-::selection{
-  color: #000;
-  background-color: pink;
-}
-::-webkit-scrollbar{
-  background-color: transparent;
-  width: 8px;
-}
-::-webkit-scrollbar-track{
-  background-color: var(--white);
-}
-::-webkit-scrollbar-thumb{
-  background-color: var(--white-03);
-  width: 8px;
-
-}
-* {
-  margin: 0px;
-  padding: 0px;
-  transition: 0.1s;
-}
-body {
-  font-family: var(--primary-font);
-}
-
-a {
-  text-decoration: none;
-  display: flex;
-  color: inherit;
-  transition: 0.3s ;
-}
-button{
-  font-family: var(--primary-font);
-  outline: none;
-}
-img{
-  pointer-events: none;
-}
-
-i.ph-bold, i.ph, i.ph-fill{
-  font-size: 24px;
-}
-.title-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 10rem;
-  gap: 1rem;
-  font-size: 21px;
-  font-weight: 500;
-  letter-spacing: var(--letter-spacing);
-  background-color: var(--white);
-  color: var(--black);
-}
-.title-bar span a:hover{
-  color: var(--blue);
-}
-
-.title-bar strong{
-  width: 24ch;
-}
-.section {
-    padding: 0 10rem;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: var(--white);
-    gap: 2rem;
-  }  
-
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 2rem;
 }
 
 .abt-h1{
   color: var(--black);
   font-size: calc(56px + 2vw);
-  font-weight: 700;
-  line-height: 110%;
-  letter-spacing: var(--letter-spacing);
-  user-select: none;
-  position: relative;
-}
-.name{
-  color: var(--black);
-  font-size: calc(84px + 2vw);
   font-weight: 700;
   line-height: 110%;
   letter-spacing: var(--letter-spacing);
@@ -171,48 +58,6 @@ i.ph-bold, i.ph, i.ph-fill{
   border-radius: 24px;
   aspect-ratio: 19/10;
   margin: 5rem 0;
-}
-.imgcontainer{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: 4rem;
-}
-.imgcontainer video, .imgcontainer img{
-  display: flex;
-  object-fit: cover;
-  width: 100%;
-  height: 800px;
-  border-radius: 24px;
-}
-.cta {
-  cursor: pointer;
-  background: var(--black);
-  color: var(--white);
-  border: 1px solid var(--white-06);
-  border-radius: 42px;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  padding: 18px 32px;
-  font-size: 18px;
-  transition-timing-function:  cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.secondary-cta{
-  background-color: transparent;
-  color: var(--blue);
-  border: none;
-  padding:0;
-  width: fit-content;
-  font-size: 20px;
-  font-weight: 600;
-}
-.secondary-cta:hover{
-  color: var(--blue-hover);
 }
 
 .skills-sec .skill-wrapper{
