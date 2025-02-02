@@ -91,14 +91,12 @@ h2.skill-name{
   padding: 2rem 0;
 }
 .appcontainer{
+  display: grid;
   display: none;
   grid-template-columns: repeat(4, 1fr);
   align-items: start;
   width: 100%;
   gap: 12px;
-}
-.appcontainer.active{
-  display: grid;
 }
 .app-name{
   display: flex;
@@ -110,39 +108,4 @@ h2.skill-name{
   border-radius: 8px;
   background-color: var(--white-07);
   color: var(--black);
-}
-
-.stack-bar{
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  border-bottom: 1px solid var(--white-06);
-}
-.stack-bar h2.stack-name{
-  width: 100%;
-  text-align: center;
-  padding: 2rem;
-  cursor: pointer;
-  color: var(--white-04);
-
-}
-
-h2.stack-name:hover{
-  background-color: var(--white-08);
-}
-h2.stack-name.active{
-  color: var(--blue);
-}
-
-.active-tab{
-  position: absolute;
-  width: 50%;
-  height: 3px;
-  background-color: var(--blue);
-  transition: all 0.3s ease;
-  bottom: 0;
-  z-index: 3;
 }
