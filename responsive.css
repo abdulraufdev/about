@@ -5,6 +5,19 @@
     .connect-container{
         padding: 0 4rem;
     }
+    .projcontainer{
+        height: 700px;
+        width: auto;
+        justify-content: flex-start;
+    }
+    .proj-img{
+        top: auto;
+        bottom: 10%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -19,6 +32,9 @@
     }
     .name{
         font-size: calc(42px + 2vw);
+    }
+    .skills-sec{
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 900px) {
@@ -36,12 +52,8 @@
     .contact-head{
         width: 100%;
     }
-    .contact-sec .cta{
-        width: 100%;
-        justify-content: center;
-    }
     .connect-container{
-        padding: 0rem 2rem;
+        padding: 1rem 2rem;
     }
     .abt-p {
         width: auto;
@@ -55,20 +67,32 @@
     .stack-name{
         font-size: 20px;
     }
+    .proj-img{
+        height: 250px;
+    }
+    .projcontainer{
+        height: 500px;
+        padding: 28px;
+    }
+    .faded-p{
+        width: auto;
+    }
+    .apps-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media screen and (max-width: 720px) {
     h2.app-name{
         font-size: 16px;
-    }
-    .skills-sec .skill-wrapper{
-        display: flex;
-        flex-direction: column;
     }
     .contact-head p{
         margin-top: 1.5rem;
     }
     .appcontainer{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .project-sec{
+        border-radius: 12px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -95,15 +119,23 @@
     .stack-name{
         font-size: 16px;
     }
-}
-
-@media screen and (max-width: 430px) {
-    .connect-wrapper{
-        flex-direction: column-reverse;
-        padding: 1rem 0;
+    .proj-img{
+        height: 160px;
+        bottom: 5%;
     }
-    .connect-icons{
-        justify-content: center;
+    .projcontainer{
+        height: 400px;
+        gap: 1rem;
+    }
+    .proj-h2{
+        font-size: 24px;
+    }
+
+    .apps-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .app-name{
+        font-size: 14px;
     }
 }
 
